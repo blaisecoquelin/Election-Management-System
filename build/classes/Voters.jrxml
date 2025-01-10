@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d871b26a-b84a-4120-978f-ad982a72de00">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     *
+FROM
+candidatetbl]]>
+	</queryString>
+	<field name="CId" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CAge" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CGen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CElect" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="159" y="24" width="171" height="32" uuid="af13bddc-220a-43ec-aa64-8008ed69f1a9"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CANDIDATES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="24" width="79" height="32" forecolor="#F3BC00" uuid="8a884ddb-ccce-4d7d-bc0b-f2d0214fdf19"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="31" width="63" height="20" uuid="7073f04c-a584-4a1e-94c6-42bcf751ad8f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="31" width="100" height="20" uuid="dc4f9aee-9bb5-462a-a2f1-9d5153dfc127"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Names]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="252" y="31" width="78" height="20" uuid="6404c865-ed82-43fe-9d41-09857804185c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="31" width="100" height="20" uuid="6803c32c-6a74-48c6-9163-100bad86508f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="454" y="21" width="86" height="30" uuid="a2687b05-6a31-4216-a83f-5540390bcf4d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Elections Registered  in]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="83" height="20" uuid="1b608c6a-0ed2-48e9-81a8-ec998bd5786a"/>
+				<textFieldExpression><![CDATA[$F{CId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="93" y="0" width="149" height="20" uuid="184ae945-9694-4ead-abf4-f57a82063874"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="252" y="0" width="78" height="20" uuid="8784f91a-357e-41c7-ac96-7c7fb19c41c5"/>
+				<textFieldExpression><![CDATA[$F{CAge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="343" y="0" width="100" height="20" uuid="c2a74831-4c92-41d4-a196-377e1836270e"/>
+				<textFieldExpression><![CDATA[$F{CGen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="454" y="0" width="100" height="20" uuid="f30a8dee-c367-4568-af22-aed3c3a9e94e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CElect}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="2" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="3" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="2" splitType="Stretch"/>
+	</summary>
+</jasperReport>
